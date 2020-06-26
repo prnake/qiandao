@@ -108,7 +108,7 @@ class RegisterHandler(BaseHandler):
         verified_code = base64.b64encode(verified_code)
         future = utils.send_mail(to=user['email'], subject=u"欢迎注册 签到", html=u"""
 
-        <h1 style="margin-left: 30px;">签到<sup>alpha</sup></h1>
+        <h1 style="margin-left: 30px;">签到</h1>
 
         <p>点击以下链接验证邮箱，当您的签到失败的时候，会自动给您发送通知邮件。</p>
 
@@ -229,7 +229,7 @@ class PasswordResetHandler(BaseHandler):
 
         future = utils.send_mail(to=user['email'], subject=u"签到(qiandao.today) 密码重置", html=u"""
 
-        <h1 style="margin-left: 30px;">签到<sup>alpha</sup></h1>
+        <h1 style="margin-left: 30px;">签到</h1>
 
         <p>点击以下链接完成您的密码重置（一小时内有效）。</p>
 
